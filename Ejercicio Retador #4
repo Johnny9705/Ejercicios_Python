@@ -1,0 +1,22 @@
+Tabla_productos = [[1,"Maiz grano",285.55],[2,"Pepino",334.72],[3,"Tomate verde",129.00]]
+
+Num_Cajas = int(input("Ingrese el número de cajas a vender:"))
+ID_Pro = int(input("Ingrese el ID del producto:"))
+
+
+for Producto in Tabla_productos :
+  
+  if Producto [0]==ID_Pro:
+    print(f"El producto es: {Producto[1]}")
+    
+    print (f"El precio por caja es:${Producto[2]}")
+    total = Producto[2] * Num_Cajas
+    if Num_Cajas >100:
+      print('El costo total a pagar es:$',Producto[2]*Num_Cajas)
+      print("Envío gratis")
+    if Num_Cajas <=100:
+     total += 1500
+     print (f'El costo total a pagar es:${round(total)}')
+     total_envio=1500
+     print("Costo de envío es de : $",total_envio)
+ 
