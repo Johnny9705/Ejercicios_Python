@@ -1,0 +1,48 @@
+Tabla_productos = [[1,"Maiz grano",285.55],[2,"Pepino",334.72],[3,"Tomate verde",129.00]]
+
+
+venta_productos = [
+[2, 122], 
+[1, 89], 
+[1, 22], 
+[3, 48], 
+[1, 75],
+[3, 322],
+[2, 95],
+[1, 148],
+[1, 83],
+[3, 100]
+]
+
+Num_Cajas = int(input("Ingrese el número de cajas a vender:"))
+ID_Pro = int(input("Ingrese el ID del producto:"))
+
+
+for Producto in Tabla_productos :
+  
+  if Producto [0]==ID_Pro:
+    venta_productos.append([ID_Pro,Num_Cajas])
+    print(f"El producto es: {Producto[1]}")
+    
+    print (f"El precio por caja es:${Producto[2]}")
+    total = Producto[2] * Num_Cajas
+    if Num_Cajas >100:
+      print(f'El costo total a pagar es:${round(Producto[2]*Num_Cajas)}')
+      print("Envío gratis")
+    
+    if Num_Cajas <=100:
+      total += 1500
+      
+      total_envio=1500
+      print("Costo de envío es de : $",total_envio)
+     
+    total_cajas_V=0
+
+    for venta in venta_productos:
+     total_cajas_V += venta[1]
+    if  total_cajas_V > 1500:
+      Descuento_venta = total*0.20
+      total = total - Descuento_venta
+    print(f"Cajas venidas en el día:{total_cajas_V}")  
+    print (f'Aplica descuento del 20%:{total_cajas_V > 1500}')
+    print (f'El costo total a pagar es:${round(total)}')
