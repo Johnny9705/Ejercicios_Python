@@ -1,0 +1,22 @@
+#print ("Ingresa el nombre del Municipio:")
+
+Municipio1 = input("Ingresa el nombre del municipio:")
+
+
+Num_habits1 = int(input("Ingresa el numero de habitantes del municipio:"))
+
+Municipio2 = input ("Ingresa el nombre del municipio: ")
+Num_habits2 = int(input("Ingresa el numero de habitantes del municipio:"))
+
+Municipio3 = input ("Ingresa el nombre del municipio: ")
+Num_habits3 = int(input("Ingresa el numero de habitantes del municipio:"))
+
+Municipios = [Municipio1, Municipio2, Municipio3]
+print ("Los municipios son:",Municipios)
+Habitantes = [Num_habits1, Num_habits2, Num_habits3]
+
+Suma_habitantes =  Num_habits1 + Num_habits2 + Num_habits3
+
+print("El total de habitantes es:",Suma_habitantes)
+Prom_habitantes = Suma_habitantes / 3
+print("El promedio de habitantes es:",Prom_habitantes)
