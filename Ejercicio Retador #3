@@ -1,0 +1,22 @@
+Peso_cemento = 44
+Peso_yeso = 30
+capacidad_max = 3254
+
+numero_costales_C = int(input("Ingresa el número de costales de cemento:"))
+
+numero_costales_Y = int(input("Ingresa el número de costales de yeso:"))
+peso_total_C = numero_costales_C * Peso_cemento
+peso_total_Y = numero_costales_Y * Peso_yeso
+Peso_Total = peso_total_C + peso_total_Y
+Capacidad_min = 3254 / 2
+print(Capacidad_min)
+comparacion1 = (Peso_Total <= capacidad_max )
+comparacion2 = (Peso_Total >= Capacidad_min )
+
+print("¿Se puede realizar el envío?",comparacion1 and  comparacion2)
+
+
+print("El peso total de costales es:",Peso_Total,"kg")
+
+
+
