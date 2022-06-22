@@ -1,0 +1,26 @@
+Superficie_sinaloa =  57,365 
+
+localizacion_sinaloa = "Se localiza en el noroeste del pais"
+clima1 ="Calido"
+clima2 = "Subhumedo"
+clima3 = "Seco"
+clima4 = "Semiseco"
+print ("Los tipos de clima son:",clima1,',',clima2,',',clima3,'y',clima4)
+
+#print(clima1)
+
+
+
+Precipitacion_Anual = 790.1
+Poblacion_mujeres = 1532128
+Poblacion_hombres = 1494815
+Total_H_M = Poblacion_mujeres + Poblacion_hombres
+print("El total de la población es:",Total_H_M)
+
+
+Culiacan_porcentaje = 33.15
+Mazatlan_porcentaje = 16.57
+print("El porcentaje total es:",Culiacan_porcentaje + Mazatlan_porcentaje,'%')
+
+Temp_M_Anual = 25.45
+print("La temperatura media anual es:",Temp_M_Anual, '°C')
